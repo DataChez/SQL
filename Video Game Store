@@ -1,0 +1,22 @@
+CREATE TABLE games (id INTEGER PRIMARY KEY, year_released INTEGER, genre TEXT, name TEXT, price INTEGER, system TEXT);
+
+INSERT INTO games VALUES (1, 1996, "ADVENTURE", "Super Mario 64", 39, "Nintendo"); 
+INSERT INTO games VALUES (2, 1994, "SPORTS", "THPS", 35, "PS");
+INSERT INTO games VALUES (3, 2007, "HORROR", "Bioshock", 49, "PS");
+INSERT INTO games VALUES (4, 2017, "ADVENTURE", "Zelda BOTW", 65, "SWITCH");
+INSERT INTO games VALUES (5, 1994, "ADVENTURE", "Donkey Kong Country", 35, "SNES");
+INSERT INTO games Values (6, 2023, "ADVENTURE", "TOTK", 60, "Nintendo");
+Insert into games values (7, 2020, "roguelike", "elden ring", 70, "PS");
+insert into games values (8, 1978, "sports", "PONG", 30, "Atari");
+insert into games values (9, 2003, "horror", "PIKMIN", 50, "Switch");
+insert into games Values (10, 2000, "business", "Animal Crossing", 60, "GameCube");
+insert into games values (11, 1999, "fighting", "SSB", 35, "Nintendo");
+insert into games values (12, 2004, "fight", "Gotcha Force", 50, "Nintendo");
+Insert into games values (13, 2019, "Platform", "River City Girls", 20, "switch");
+insert into games values (14, 2006, "Platform", "Sonic Adventure 2", 45, "Nintendo");
+insert into games values (15, 2002, "Platform", "Megaman Zero 4", 35, "Nintendo");
+
+
+select* from games where genre = "horror";
+Select* from games where year_released >=2000;
+select* from games where price >=20
