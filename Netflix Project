@@ -1,0 +1,20 @@
+
+Select director
+From "CharlotteChaze/BreakIntoTech"."netflix_people" people
+left outer join "CharlotteChaze/BreakIntoTech"."netflix_titles_info" titles ON people.show_id= titles.show_id
+where title= 'Bright Star';
+
+Select title, release_year
+From "CharlotteChaze/BreakIntoTech"."netflix_titles_info"
+order by release_year asc
+limit 1;
+
+select count(*) title
+from "CharlotteChaze/BreakIntoTech"."netflix_titles_info";
+
+select max(date(date_added))
+from "CharlotteChaze/BreakIntoTech"."netflix_titles_info";
+
+select title
+from "CharlotteChaze/BreakIntoTech"."netflix_titles_info"
+order by title asc;
